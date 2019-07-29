@@ -116,7 +116,7 @@ imagestream:
   label: authsvc
 
 buildconfig:
-  uri: "https://github.com/cumulus-bank/Accounts-Microservice.git"
+  uri: "https://github.com/cumulus-bank/authentication-mariadb.git"
   branch: "master"
   name: "authsvc"
   imagename: "authsvc:latest"
