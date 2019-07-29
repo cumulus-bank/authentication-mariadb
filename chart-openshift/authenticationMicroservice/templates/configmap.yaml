@@ -2,9 +2,11 @@ apiVersion: v1
 kind: ConfigMap
 metadata:
   name: cumulusbankauth
-  namespace: default
+  namespace: kubeapp
+  labels:
+    app: {{ .Values.metadata.name }} 
 data:
   DATABASE: SAMPLE
   PORT: '3306'
-  HOST: 'cumulusbankauth-ibm-mariadb-dev.default'
+  HOST: 'mariadb.kubeapp'
   PROTOCOL: TCPIP
