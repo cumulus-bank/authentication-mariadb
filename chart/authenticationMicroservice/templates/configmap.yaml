@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: cumulusbankauth
+  namespace: default
+data:
+  DATABASE: SAMPLE
+  PORT: '3306'
+  HOST: 'cumulusbankauth-ibm-mariadb-dev.default'
+  PROTOCOL: TCPIP
