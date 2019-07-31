@@ -122,3 +122,10 @@ buildconfig:
   imagename: "authsvc:latest"
   secret1: "secret3"
   secret2: "secret4"
+
+
+routes:
+  host: "authsvc-kubeapp.apps.9.30.210.207.nip.io"
+  targetPort: 3004
+  name: authsvc
+  weight: 100
