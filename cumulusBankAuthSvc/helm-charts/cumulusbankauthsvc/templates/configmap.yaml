@@ -2,7 +2,7 @@ apiVersion: v1
 kind: ConfigMap
 metadata:
   name: cumulusbankauth
-  namespace: kubeapp
+  namespace: "{{ .Values.namespace }} "
   labels:
     app: "{{ .Values.metadata.name }} "
 data:

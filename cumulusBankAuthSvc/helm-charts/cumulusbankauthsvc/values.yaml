@@ -9,7 +9,7 @@ mariadb:
   secret: aGVsbG8=
 metadata:
  name: auth-svc 
- label: authsvc
+ label: auth-svc
 readinessProbe:
   path: /healthz
   port: 3004
@@ -24,8 +24,8 @@ livenessProbe:
   timeoutSeconds: 2
   periodSeconds: 300
 image:
-  name: authsvc
-  imageName: "authsvc" 
+  name: auth-svc
+  imageName: "auth-svc" 
   imagePullPolicy: Always
   ports:
     containerPort: 3004
@@ -43,7 +43,7 @@ image:
   
 hpa:
   metadata:
-    name: authsvcmicroservicehpa
+    name: auth-svcmicroservicehpa
   spec:
     maxReplicas: 10
     minReplicas: 2
@@ -56,7 +56,7 @@ hpa:
     memory:
       targetAverageUtilization: 50
   scaleTargetRef:  
-    name: authsvc
+    name: auth-svc
 
 envOfSecrets:
   envUID:
@@ -105,36 +105,36 @@ envOfConfigmaps:
 
 service:
   serviceMetadata:
-    name: authsvc
+    name: auth-svc
     labels:
-      app: authsvc
+      app: auth-svc
   selector:
-    selectorName: authsvc
+    selectorName: auth-svc
   servicePortConfiguration:
     protocol: TCP
-    name: authsvc
+    name: auth-svc
     type: ClusterIP
     port: 3004
     targetPort: 3004
 
 
 imagestream:
-  name:  authsvc
-  label: authsvc
+  name:  auth-svc
+  label: auth-svc
 
 buildconfig:
   uri: "https://github.com/cumulus-bank/authentication-mariadb.git"
   branch: "master"
-  name: "authsvc"
-  imagename: "authsvc:latest"
-  secret1: "secret63862868"
-  secret2: "secret63862868"
+  name: "auth-svc"
+  imagename: "auth-svc:latest"
+  secret1: "sedrfgh"
+  secret2: "sedrfgh"
 
 
 routes:
-  host: "authsvc-kubeapp.apps.9.30.210.207.nip.io"
+  host: "auth-svc-kubeapp.apps.9.30.210.207.nip.io"
   targetPort: 3004
-  name: authsvc
+  name: auth-svc
   weight: 100
 
 

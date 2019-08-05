@@ -10,5 +10,4 @@ spec:
     uid: "YWRtaW4="
     password: "YWRtaW4="
     secret: "aGVsbG8="
-  routes:
-    host: "accountsvc-kubeapp.apps.9.30.210.207.nip.io"
+    database: "SAMPLE"
