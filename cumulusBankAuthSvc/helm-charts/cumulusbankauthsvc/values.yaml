@@ -1,7 +1,14 @@
 replicaCount: 2
+namespace: kubeapp
 
+mariadb:
+  database: "SAMPLE"
+  host: "mariadb.kubeapp"
+  uid: YWRtaW4=
+  password: YWRtaW4=
+  secret: aGVsbG8=
 metadata:
- name: authsvc 
+ name: auth-svc 
  label: authsvc
 readinessProbe:
   path: /healthz
@@ -120,8 +127,8 @@ buildconfig:
   branch: "master"
   name: "authsvc"
   imagename: "authsvc:latest"
-  secret1: "secret3"
-  secret2: "secret4"
+  secret1: "secret63862868"
+  secret2: "secret63862868"
 
 
 routes:
@@ -129,3 +136,7 @@ routes:
   targetPort: 3004
   name: authsvc
   weight: 100
+
+
+nameOverride: ""
+fullnameOverride: ""

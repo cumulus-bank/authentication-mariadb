@@ -5,9 +5,9 @@ metadata:
     openshift.io/generated-by: OpenShiftWebConsole
     openshift.io/host.generated: 'true'
   labels:
-    app: {{ .Values.routes.name }}
-  name: {{ .Values.routes.name }}
-  namespace: kubeapp
+    app: {{ .Values.metadata.name }} 
+  name: {{ .Values.metadata.name }} 
+  namespace: {{ .Values.namespace }} 
 spec:
   host: {{ .Values.routes.host }}
   port:

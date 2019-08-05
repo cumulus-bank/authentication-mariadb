@@ -4,9 +4,9 @@ metadata:
   name: cumulusbankauth
   namespace: kubeapp
   labels:
-    app: {{ .Values.metadata.name }} 
+    app: "{{ .Values.metadata.name }} "
 data:
-  DATABASE: SAMPLE
+  DATABASE: "{{ .Values.mariadb.database }}"
   PORT: '3306'
-  HOST: 'mariadb.kubeapp'
+  HOST: "{{ .Values.mariadb.host }}"
   PROTOCOL: TCPIP
