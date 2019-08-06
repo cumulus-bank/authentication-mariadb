@@ -1,13 +1,13 @@
 apiVersion: cumulusbank.com/v1alpha1
-kind: CumulusBankAuthSvc
+kind: CumulusBankAuth
 metadata:
   name: authsvc
 spec:
   replicaCount: 2
   namespace: "kubeapp"
-  mariadb: 
+  mariadb:
+    database: "SAMPLE"
     host: "mariadb.kubeapp"
     uid: "YWRtaW4="
     password: "YWRtaW4="
     secret: "aGVsbG8="
-    database: "SAMPLE"

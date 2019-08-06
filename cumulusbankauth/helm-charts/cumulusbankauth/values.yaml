@@ -1,15 +1,16 @@
 replicaCount: 2
-namespace: kubeapp
+namespace: "kubeapp"
+metadata:
+ name: auth-svc 
+ label: auth-svc
 
 mariadb:
   database: "SAMPLE"
   host: "mariadb.kubeapp"
-  uid: YWRtaW4=
-  password: YWRtaW4=
-  secret: aGVsbG8=
-metadata:
- name: auth-svc 
- label: auth-svc
+  uid: "YWRtaW4="
+  password: "YWRtaW4="
+  secret: "aGVsbG8="
+
 readinessProbe:
   path: /healthz
   port: 3004
@@ -127,8 +128,8 @@ buildconfig:
   branch: "master"
   name: "auth-svc"
   imagename: "auth-svc:latest"
-  secret1: "sedrfgh"
-  secret2: "sedrfgh"
+  secret1: "zdxcfgvh"
+  secret2: "zdxcfgvh"
 
 
 routes:
