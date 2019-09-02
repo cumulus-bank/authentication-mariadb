@@ -8,5 +8,5 @@ metadata:
 data:
   DATABASE: "{{ .Values.mariadb.database }}"
   PORT: "3306"
-  HOST: "{{ .Values.mariadb.database }}"
+  HOST: "{{ .Values.mariadb.host }}"
   PROTOCOL: "TCPIP"

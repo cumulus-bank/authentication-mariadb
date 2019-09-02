@@ -131,7 +131,6 @@ buildconfig:
   secret1: "zdxcfgvh"
   secret2: "zdxcfgvh"
 
-
 routes:
   host: "auth-svc-kubeapp.apps.9.30.210.207.nip.io"
   targetPort: 3004
