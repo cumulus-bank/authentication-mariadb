@@ -4,10 +4,10 @@ metadata:
   name: authsvc
 spec:
   replicaCount: 2
-  namespace: "kubeapp"
+  namespace: "cumulusbank"
   mariadb:
     database: "SAMPLE"
-    host: "mariadb.kubeapp"
+    host: "mariadb.cumulusbank"
     uid: "YWRtaW4="
     password: "YWRtaW4="
     secret: "aGVsbG8="
