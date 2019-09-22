@@ -18,7 +18,7 @@ livenessProbe:
   periodSeconds: 300
 image:
   name: authsvc
-  imageName: "authsvc" 
+  imageName: "s4saif/cumulus-authentication-microservice:latest" 
   imagePullPolicy: Always
   ports:
     containerPort: 3004
