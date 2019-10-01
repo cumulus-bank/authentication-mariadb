@@ -39,7 +39,7 @@ hpa:
     name: authsvcmicroservicehpa
   spec:
     maxReplicas: 10
-    minReplicas: 2
+    minReplicas: 1
   metrics:
     pods:
       targetAverageValue: 30
