@@ -54,11 +54,11 @@ dataVolume:
 ##
 resources:
   requests:
-    memory: 2Gi
-    cpu: 2000m
+    memory: 1Gi
+    cpu: 800m
   limits:
-    memory: 8Gi
-    cpu: 10000m
+    memory: 2Gi
+    cpu: 1000m
 
 service:
   name: mariadb
