@@ -6,5 +6,5 @@ metadata:
 data:
   DATABASE: SAMPLE
   PORT: '3306'
-  HOST: 'cumulusbankauth-ibm-mariadb-dev.default'
+  HOST: 'md-cumulus-cumulusbank-maria-gcp1-maria.cumulusbank'
   PROTOCOL: TCPIP
