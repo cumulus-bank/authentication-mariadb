@@ -11,6 +11,8 @@ metadata:
 spec:
   template:
     metadata:
+      annotation:
+        sidecar.istio.io/inject: "true"
       labels:
         app: {{ template "fullname" . }}
     spec:
