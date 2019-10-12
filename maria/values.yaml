@@ -23,7 +23,7 @@ arch:
   s390x: "2 - No preference"
 image:
   repository: ibmcom/mariadb
-  tag: latest
+  tag: 10.2.15
   pullPolicy: IfNotPresent
 
 ###############################################################################
