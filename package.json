@@ -41,7 +41,7 @@
     "express": "^4.16.3",
     "gulp-typescript": "^3.2.4",
     "http": "0.0.0",
-    "jsonwebtoken": "^8.2.2",
+    "jsonwebtoken": "^9.0.0",
     "lodash": "^4.17.10",
     "mariadb": "^2.0.1",
     "morgan": "^1.7.0",
